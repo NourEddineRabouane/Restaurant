@@ -1,0 +1,112 @@
+:root {
+    --primary-color: #ff6600;
+    --secondary-color: #ff3366;
+    --text-color: #e0e0e0;
+    --header-bg-color: #212529; 
+    --body-bg-color: #e0e0e0;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../Fonts/Roboto/Roboto-Regular.ttf") format("ttf");
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+/* global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--body-bg-color);
+}
+.logo {
+    font-size: 32px; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    color: var(--text-color); 
+    background: linear-gradient(
+        45deg,
+        var(--primary-color),
+        var(--secondary-color)
+    ); 
+    -webkit-background-clip: text; 
+    background-clip: text; /*le background s'applique seulment sur le text*/
+    -webkit-text-fill-color: transparent; /*la couleur du text devient transparant */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    animation: textAnimation 1.5s infinite alternate;
+    margin: 8px;
+}
+
+/* Animation de goutte néon */
+@keyframes textAnimation {
+    from {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    to {
+        text-shadow: 0 0 10px var(--secondary-color), 0 0 20px var(--secondary-color), 0 0 40px var(--secondary-color),
+            0 0 80px var(--secondary-color), 0 0 160px var(--secondary-color);
+    }
+}
+
+/* Styles pour l'en-tête */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #31363f; 
+    padding: 10px 20px; 
+    color: var(--text-color); 
+}
+
+.logo {
+    font-size: 24px; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+}
+
+/* Styles pour le div.menu du site */
+#menu {
+    display: flex;
+    align-items: center;
+}
+
+#menu ul li {
+    display: inline-block; 
+    margin-right: 20px;
+}
+
+#menu ul li:last-child {
+    margin-right: 0; 
+}
+
+/* Styles pour les icônes */
+.material-symbols-outlined {
+    font-family: "Material Icons Outlined";
+    font-size: 8px;
+}
+
+/* Styles pour les ancres */
+#menu ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    transition: all linear .2s;
+}
+
+#menu ul li a:hover {
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+
+#menu ul li a.active {
+    color: var(--primary-color);
+}

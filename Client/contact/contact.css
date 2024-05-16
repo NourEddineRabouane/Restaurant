@@ -1,0 +1,60 @@
+
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h3 {
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+}
+
+.section p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.contact-info p {
+    margin-bottom: 4px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s ease;
+
+    & .fa-facebook {
+        color : #00a8e8 ;
+    }
+    & .fa-instagram{
+        color: #6247aa;
+    }
+    & .fa-twitter{
+        color: #4793af;
+    }
+
+
+}
+
+.social-links a:hover {
+    color: #00bcd4;
+}
+
+.social-links i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+}

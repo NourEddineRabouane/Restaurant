@@ -1,0 +1,137 @@
+.employee-form {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1 1 10px rgba(0, 0, 0, 0.1);
+}
+
+.employee-form h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.employee-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-fields {
+    width: 60%;
+}
+
+.input-fields input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.admission-date {
+    margin-bottom: 15px;
+}
+
+.admission-date label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #555;
+}
+
+.action-buttons {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.action-buttons :where(.add, .Edit) {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #fff;
+}
+
+.add {
+    background-color: #1aa7ec;
+    flex-grow: 2;
+    &:hover {
+        background-color: #1186c0;
+    }
+}
+.Edit {
+    background-color: #e63f4d;
+    flex-grow: 1;
+    border: none;
+    border-radius: 4px;
+    &:hover {
+        background-color: #c72330;
+    }
+}
+
+/* tableau des employee */
+#employers {
+    width: calc(100% - 8px);
+    border-collapse: collapse;
+    margin: 4px;
+    text-align: left;
+}
+#employers thead {
+    background-color: #333333;
+}
+#employers th {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+}
+
+#employers td,
+#employers th {
+    padding: 8px;
+    font-size: small;
+}
+
+#employers tr {
+    border: 1px solid #a3a3a3;
+
+    &:nth-child(2n) {
+        background-color: #d6d5d5;
+    }
+}
+
+#employers button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#employers button:hover {
+    background-color: #45a049;
+}
+
+/* titre du tableau */
+#employers caption {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1aa7ec;
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    background-color: transparent;
+}

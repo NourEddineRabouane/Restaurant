@@ -1,0 +1,131 @@
+/* Main menu container */
+.Menu {
+    padding: 16px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Add item section */
+.ajout {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.inputs input,
+.inputs select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.tools {
+    display: flex;
+    align-items: flex-end;
+}
+
+.add {
+    padding: 8px 16px;
+    background-color: #1aa7ec;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 70%;   
+    margin-right: 5px;
+    &:hover{
+        background-color: #0e8ec5;
+    }
+}
+.Edit {
+    padding: 8px 16px;
+    background-color: #e63f4d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 30%;
+
+    &:hover {
+        background-color: #ce1c2b;
+    }
+}
+
+
+/* Table style */
+h3:has(+.menurepas) {
+    margin-top: 24px;
+}
+
+/* Section titles style */
+h3 {
+    font-size: 16px; 
+    font-weight: bold; 
+    color: #333; 
+    margin-bottom: 10px; 
+    text-transform: capitalize;
+    /* border-bottom: 2px solid #ccc;  */
+    padding-bottom: 5px; 
+}
+
+.menurepas table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #afadad;
+}
+
+.menurepas th, .menurepas td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.menurepas table thead {
+    background-color: #f2f2f2;
+}
+
+/* Button style */
+.menurepas button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.menurepas button:hover {
+    background-color: #45a049;
+}
+
+
+.menurepas table tbody tr:nth-child(2n) {
+    background-color: #eceaea;
+}
+
+/* Table titles */
+.categorie-titre {
+    font-size: small;
+    font-weight: bolder;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 0;
+    background-color: #333;
+    margin-block:32px 0px;
+}
+
+.material-symbols-outlined{
+    font-size: 20px !important;
+}
+

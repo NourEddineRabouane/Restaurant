@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #24292e;
+}
+
+section {
+    padding: 10px;
+    
+}
+
+section div {
+    width: 92%;
+    margin: 32px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section div p {
+    font-size: x-large; 
+    text-align: center;
+    color: #999;
+    width: 70%;
+}
+
+section div p strong {
+    color: #ff6347; 
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+
+img{
+    
+    width: 200px;
+    filter: drop-shadow(gold 1px 1px 10px);
+    aspect-ratio: 1/1;
+}
+
+section button{
+    border: none;
+    margin-left: 150px;
+    padding: 12px;
+    background-color: rgb(170, 124, 9);
+    color: #e0e0e0;
+    cursor: pointer;
+    
+    &:hover{
+        background-color: goldenrod;
+    }
+}

@@ -1,0 +1,33 @@
+
+/* body */
+.main {
+    
+    display:flex;
+    color: #e6af47;
+}
+.main-content {
+    padding: 50px;
+    text-align: center;
+}
+
+.main-content p {
+    margin-top: 24px;
+    color: #666;
+}
+
+.main-content button {
+    background-color: #c86208;
+    border: none;
+    margin-top: 24px;
+    padding: 8px 12px;
+    color: #fff;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    &:hover{
+        background-color: #ff6347;
+    }
+}
+
+.main .imageContainer img{
+    width: 300px;
+}
